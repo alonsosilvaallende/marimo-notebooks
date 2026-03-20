@@ -35,7 +35,7 @@ jobs:
     
           - name: 📄 Export notebook
             run: |
-                uvx marimo --with graphviznb export html-wasm notebook.py -o path/to/output --mode edit
+                uvx marimo export html-wasm notebook.py -o path/to/output --mode edit
  
           - name: 📦 Upload Pages Artifact
             uses: actions/upload-pages-artifact@v3
